@@ -5,6 +5,10 @@ const path = require("path");
 const app = express();
 const port = 3000;
 
+app.get("/users", (req, res) => {
+    res.send("Hello from users!!!");
+})
+
 //
 // Registers a HTTP GET route for video streaming.
 //
